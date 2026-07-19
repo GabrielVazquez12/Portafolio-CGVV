@@ -38,9 +38,6 @@ export default function HeroSection() {
     return (
         <section className="hero">
         <div className="hero-top">
-            <div className="avatar" id="avatar-placeholder">
-            <i className="fa-solid fa-user"></i>
-            </div>
             <div>
             <div className="eyebrow">ESTUDIANTE DE INGENIERÍA EN SISTEMAS</div>
             <h1>Hola, soy <span id="scramble-name" ref={nameRef}></span></h1>

@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import TechStack from './components/TechStack'
 import CustomCursor from './components/CustomCursor'
 import GithubDashboard from './components/GithubDashboard'
+import AboutMe from './components/AboutMe'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
+        <AboutMe />
         <Projects />
         <TechStack />
         <GithubDashboard />
