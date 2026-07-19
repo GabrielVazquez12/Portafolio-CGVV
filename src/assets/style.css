@@ -1,0 +1,66 @@
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+    @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
+    :root{
+    --bg: #030304;
+    --red: #ff3b3b;
+    --red-dim: #7a1f1f;
+    --red-faint: rgba(255,59,59,0.12);
+    --glass: rgba(255,255,255,0.04);
+    --glass-border: rgba(255,59,59,0.25);
+    --text: #eae7e7;
+    --text-dim: #8a8585;
+    --mono: 'Courier New', Consolas, monospace;
+    }
+
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    html{ scroll-behavior: smooth; }
+    body{
+    background: var(--bg); color: var(--text); font-family: var(--mono);
+    overflow-x:hidden; cursor:none;
+    }
+    ::selection{ background: var(--red); color:#000; }
+    @media (hover:none){ body{ cursor:auto; } #cursor-dot{ display:none; } }
+
+    /* ---------- NAV ---------- */
+    nav{
+    position: sticky; top:0; z-index:50; display:flex; justify-content:space-between; align-items:center;
+    padding: 20px 6vw; background: rgba(3,3,4,0.7); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--red-dim);
+    }
+    nav .logo{ color: var(--red); font-weight:bold; letter-spacing:2px; }
+    nav a{ color: var(--text-dim); text-decoration:none; margin-left:24px; font-size:13px; letter-spacing:1px; transition: color 0.2s; }
+    nav a:hover{ color: var(--red); }
+
+    /* ---------- LAYOUT BASE ---------- */
+    main{ position:relative; z-index:1; }
+    section{ padding: 12vh 6vw; max-width: 1000px; margin:0 auto; }
+    h2.section-title{ font-size:13px; letter-spacing:4px; color: var(--red); margin-bottom:44px; text-transform:uppercase; }
+    h2.section-title::before{ content:"// "; color: var(--red-dim); }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero{ min-height: 78vh; display:flex; flex-direction:column; justify-content:center; }
+    .hero-top{ display:flex; align-items:center; gap: 28px; flex-wrap: wrap; }
+    .avatar{
+    width: 96px; height: 96px; border-radius: 50%; flex-shrink:0;
+    border: 2px solid var(--red); box-shadow: 0 0 24px var(--red-faint);
+    object-fit: cover; background: var(--glass);
+    display:flex; align-items:center; justify-content:center; color: var(--red); font-size: 34px;
+    }
+    .eyebrow{ color: var(--red-dim); letter-spacing:3px; font-size:12px; margin-bottom:18px; }
+    .hero h1{
+    font-size: clamp(38px, 7vw, 76px); font-weight:bold; line-height:1.05; color: var(--text);
+    font-family: var(--mono); letter-spacing: 1px;
+    }
+    #scramble-name{ color: var(--red); text-shadow: 0 0 24px var(--red-faint); }
+    .hero p{ color: var(--text-dim); margin-top:22px; max-width:560px; font-size:15px; line-height:1.7; }
+    .hero .role{ color: var(--red); }
+
+    /* ---------- BOTONES ---------- */
+    .cta-row{ margin-top: 36px; display:flex; gap:16px; flex-wrap:wrap; }
+    .btn{
+    padding: 13px 28px; border-radius: 999px; border: 1px solid var(--red-dim); background: transparent;
+    color: var(--red); font-family: var(--mono); font-size:13px; letter-spacing:1px; cursor:pointer;
+    text-decoration:none; display:inline-block; transition: all 0.2s;
+    }
+    .btn:hover{ border-color: var(--red); box-shadow: 0 0 18px var(--red-faint); }
