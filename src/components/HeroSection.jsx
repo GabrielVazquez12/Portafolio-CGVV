@@ -49,7 +49,6 @@ export default function HeroSection() {
         </p>
         <div className="cta-row">
             <a href="#proyectos" className="btn">ver proyectos</a>
-            <a href="#terminal" className="btn">abrir terminal</a>
         </div>
         </section>
     );

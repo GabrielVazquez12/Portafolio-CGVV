@@ -5,10 +5,9 @@ export default function Navbar() {
             CARLOS<span style={{color: 'var(--text-dim)'}}>.dev</span>
         </div>
         <div>
-            <a href="#proyectos">proyectos</a>
+            <a href="#about">about me</a>
+            <a href="#proyectos">projects</a>
             <a href="#stack">stack</a>
-            <a href="#terminal">terminal</a>
-            <a href="#contacto">contacto</a>
         </div>
     </nav>
     );

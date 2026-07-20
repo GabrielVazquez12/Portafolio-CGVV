@@ -6,7 +6,7 @@ import TechStack from './components/TechStack'
 import CustomCursor from './components/CustomCursor'
 import GithubDashboard from './components/GithubDashboard'
 import AboutMe from './components/AboutMe'
-
+import Footer from './components/Footer'
 function App() {
   return (
     <>
@@ -20,6 +20,7 @@ function App() {
         <TechStack />
         <GithubDashboard />
       </main>
+    <Footer />
     </>
   )
 }

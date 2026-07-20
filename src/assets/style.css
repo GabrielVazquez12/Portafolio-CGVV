@@ -14,7 +14,7 @@
     }
 
     *{ box-sizing:border-box; margin:0; padding:0; }
-    html{ scroll-behavior: smooth; }
+    html{ scroll-behavior: smooth; scroll-padding-top: 100px; }
     body{
     background: var(--bg); color: var(--text); font-family: var(--mono);
     overflow-x:hidden; cursor:none;
@@ -256,4 +256,42 @@
     background: rgba(255, 255, 255, 0.03);
     padding: 8px 12px;
     border-left: 2px solid var(--red);
+}
+
+/* ---------- FOOTER SECTION ---------- */
+.footer-section {
+    padding: 40px 20px;
+    background-color: rgba(10, 10, 15, 0.9); /* Fondo más oscuro para el cierre */
+    border-top: 1px solid var(--glass-border);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    cursor: none; /* Para que el láser lo detecte bien */
+}
+
+.footer-link i {
+    font-size: 18px;
+}
+
+.footer-link:hover {
+    color: var(--text);
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }

@@ -6,13 +6,8 @@ const AboutMe = () => {
             <div className="about-grid">
                 {/* Contenedor de la Foto */}
                 <div className="about-image-wrapper">
-                    <img src="../public/foto-perfil.jpeg" alt="Carlos Gabriel Vázquez Vélez" className="profile-img" />
+                    <img src="/foto-perfil.jpeg" alt="Carlos Gabriel Vázquez Vélez" className="profile-img" />
                     <div className="image-frame"></div>
-                    
-                    {/* Badge estilo terminal inspirado en tu GitHub */}
-                    <div className="status-badge">
-                        <span className="blink-dot"></span> OPEN TO INTERNSHIPS
-                    </div>
                 </div>
 
                 {/* Contenedor del Texto y Botones */}
@@ -34,21 +29,9 @@ const AboutMe = () => {
                     </p>
 
                     <div className="about-actions">
-                        <a href="../public/CV_Carlos_Gabriel_Vazquez_Velez.pdf" target="_blank" className="btn btn-transparent">
+                        <a href="/CV_Carlos_Gabriel_Vazquez_Velez.pdf" target="_blank" className="btn btn-transparent">
                             <i className="fa-solid fa-file-pdf"></i> My CV.PDF
                         </a>
-                        
-                        <div className="social-links">
-                            <a href="https://github.com/GabrielVazquez12" target="_blank" rel="noreferrer" className="social-btn">
-                                <i className="devicon-github-original"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/carlos-gabriel-vazquez-032a9441b" target="_blank" rel="noreferrer" className="social-btn">
-                                <i className="devicon-linkedin-plain"></i>
-                            </a>
-                            <a href="mailto:carlosgvazquez1202@gmail.com" className="social-btn">
-                                <i className="fa-solid fa-envelope"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
