@@ -22,9 +22,6 @@ const AboutMe = () => {
                         I am a Systems Engineering student at Tecnológico Nacional de México, heavily focused on Full Stack development, virtualization, and scalable infrastructure. I build robust solutions by combining Python, Go, and Node.js on the backend with React and Flutter on the frontend, supported by containerization tools like Docker and databases like MySQL and PostgreSQL.
                     </p>
                     <p>
-                        My standout project is <strong>Clockmant</strong>, an award-winning Flutter mobile app developed during a HackaTec competition. It validates employee attendance through facial recognition (powered by Python) and real-time geolocation, feeding coordinates directly to a live HR dashboard.
-                    </p>
-                    <p>
                         Beyond the IDE, I'm passionate about customizing my Linux desktop environments, exploring the lore of video games, and continuously optimizing my workflow. I am currently looking for an internship or residency where I can contribute to high-impact projects.
                     </p>
 

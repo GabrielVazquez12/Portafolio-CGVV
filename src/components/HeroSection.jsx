@@ -39,16 +39,16 @@ export default function HeroSection() {
         <section className="hero">
         <div className="hero-top">
             <div>
-            <div className="eyebrow">ESTUDIANTE DE INGENIERÍA EN SISTEMAS</div>
-            <h1>Hola, soy <span id="scramble-name" ref={nameRef}></span></h1>
+            <div className="eyebrow">SYSTEMS ENGINEERING STUDENT</div>
+            <h1> Hello, I'm <span id="scramble-name" ref={nameRef}></span></h1>
             </div>
         </div>
         <p>
-            Construyo software con la misma obsesión con la que se completa un mapa al 100%.{' '}
-            <span className="role">Enfocado en desarrollo Full Stack e integración IoT.</span>
+            I build software with the same obsession as completing a game map to 100%.{' '}
+            <span className="role">Focused on Full Stack development and IoT integration.</span>
         </p>
         <div className="cta-row">
-            <a href="#proyectos" className="btn">ver proyectos</a>
+            <a href="#proyectos" className="btn">View Projects</a>
         </div>
         </section>
     );
